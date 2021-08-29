@@ -1,7 +1,8 @@
 import { Game } from "./Game";
 import { Player } from "./Player";
+export declare type MatchId = string;
 export declare type Match = {
-    matchID: string;
+    matchID: MatchId;
     options: MatchOptions;
     players: Player[];
     games: Game[];

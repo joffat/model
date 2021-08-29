@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+exports.EVENTS = void 0;
 var EVENTS;
 (function (EVENTS) {
     EVENTS["BROADCAST"] = "BROADCAST";

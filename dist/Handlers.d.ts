@@ -1,5 +1,5 @@
 import { EventName } from "./EventName";
-import { CreateMatchMessage, GameEndedMessage, GameInfoMessage, GameToPlayerMessage, MatchCreatedMessage, PlayerToGameMessage } from "./Messages";
+import { CreateMatchMessage, GameEndedMessage, GameInfoMessage, GameToPlayerMessage, MatchCreatedMessage, MatchReplayMessage, PlayerToGameMessage } from "./Messages";
 export interface IEventHandler {
     eventName: EventName;
     handler: any;
@@ -13,6 +13,11 @@ export declare class MatchCreatedEventHandler implements IEventHandler {
     handler: (message: MatchCreatedMessage) => void;
     eventName: EventName.MatchCreated;
     constructor(handler: (message: MatchCreatedMessage) => void);
+}
+export declare class MatchReplayEventHandler implements IEventHandler {
+    handler: (message: MatchReplayMessage) => void;
+    eventName: EventName.MatchReplay;
+    constructor(handler: (message: MatchReplayMessage) => void);
 }
 export declare class GameEndedEventHandler implements IEventHandler {
     handler: (message: GameEndedMessage) => void;

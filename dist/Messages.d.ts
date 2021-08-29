@@ -1,6 +1,6 @@
 import { Game } from "./Game";
 import { GameServerAddress } from "./GameServerAddress";
-import { Match, MatchOptions } from "./Match";
+import { Match, MatchId, MatchOptions } from "./Match";
 import { Player } from "./Player";
 import { TournamentOptions } from "./Tournament";
 export declare type CreateMatchMessage = {
@@ -11,6 +11,9 @@ export declare type MatchCreatedMessage = {
     playerTokens: {
         [name: string]: string;
     };
+};
+export declare type MatchReplayMessage = {
+    matchId: MatchId;
 };
 export declare type MatchEndedMessage = Match;
 export declare type GameEndedMessage = Game;

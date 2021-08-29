@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+exports.PlayerDisconnectedEvent = exports.GameListEvent = exports.GameToPlayerEvent = exports.PlayerToGameEvent = exports.GameInfoEvent = exports.GameServerHandoffEvent = exports.GameEndedEvent = exports.MatchReplayEvent = exports.MatchEndedEvent = exports.MatchCreatedEvent = exports.CreateMatchEvent = void 0;
 var CreateMatchEvent = (function () {
     function CreateMatchEvent(message) {
         this.message = message;
@@ -20,6 +21,13 @@ var MatchEndedEvent = (function () {
     return MatchEndedEvent;
 }());
 exports.MatchEndedEvent = MatchEndedEvent;
+var MatchReplayEvent = (function () {
+    function MatchReplayEvent(message) {
+        this.message = message;
+    }
+    return MatchReplayEvent;
+}());
+exports.MatchReplayEvent = MatchReplayEvent;
 var GameEndedEvent = (function () {
     function GameEndedEvent(message) {
         this.message = message;

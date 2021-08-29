@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+exports.GameInfoEventHandler = exports.PlayerToGameEventHandler = exports.GameToPlayerEventHandler = exports.MatchEndedEventHandler = exports.GameEndedEventHandler = exports.MatchReplayEventHandler = exports.MatchCreatedEventHandler = exports.CreateMatchEventHandler = void 0;
 var CreateMatchEventHandler = (function () {
     function CreateMatchEventHandler(handler) {
         this.handler = handler;
@@ -14,6 +15,13 @@ var MatchCreatedEventHandler = (function () {
     return MatchCreatedEventHandler;
 }());
 exports.MatchCreatedEventHandler = MatchCreatedEventHandler;
+var MatchReplayEventHandler = (function () {
+    function MatchReplayEventHandler(handler) {
+        this.handler = handler;
+    }
+    return MatchReplayEventHandler;
+}());
+exports.MatchReplayEventHandler = MatchReplayEventHandler;
 var GameEndedEventHandler = (function () {
     function GameEndedEventHandler(handler) {
         this.handler = handler;

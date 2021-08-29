@@ -23,6 +23,11 @@ export class MatchEndedEvent implements IEvent {
   public message: null;
 }
 
+export class MatchReplayEvent implements IEvent {
+  public name: EventName.MatchReplay;
+  public constructor(public message: Messages.MatchReplayMessage) {}
+}
+
 export class GameEndedEvent implements IEvent {
   public name: EventName.GameEnded;
   public constructor(public message: Messages.GameEndedMessage) {}

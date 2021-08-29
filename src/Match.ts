@@ -2,8 +2,10 @@
 import { Game } from "./Game";
 import { Player } from "./Player";
 
+export type MatchId = string;
+
 export type Match = {
-  matchID: string,
+  matchID: MatchId,
   options: MatchOptions
   players: Player[],
   games: Game[],

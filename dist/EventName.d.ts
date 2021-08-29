@@ -3,6 +3,7 @@ export declare enum EventName {
     MatchCreated = "MatchCreated",
     MatchUpdated = "MatchUpdated",
     MatchEnded = "MatchEnded",
+    MatchReplay = "MatchReplay",
     GameUpdated = "GameUpdated",
     GameEnded = "GameEnded",
     GameInfo = "GameInfo",

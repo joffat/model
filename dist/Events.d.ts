@@ -18,6 +18,11 @@ export declare class MatchEndedEvent implements IEvent {
     name: EventName.MatchEnded;
     message: null;
 }
+export declare class MatchReplayEvent implements IEvent {
+    message: Messages.MatchReplayMessage;
+    name: EventName.MatchReplay;
+    constructor(message: Messages.MatchReplayMessage);
+}
 export declare class GameEndedEvent implements IEvent {
     message: Messages.GameEndedMessage;
     name: EventName.GameEnded;
